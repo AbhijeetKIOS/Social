@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		907593B02F49B4810026485D /* SocialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907593AF2F49B4810026485D /* SocialApp.swift */; };
+		907593B42F49B4820026485D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 907593B32F49B4820026485D /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		907593BA2F49B4820026485D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -25,6 +30,8 @@
 
 /* Begin PBXFileReference section */
 		907593AC2F49B4810026485D /* Social.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Social.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		907593AF2F49B4810026485D /* SocialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialApp.swift; sourceTree = "<group>"; };
+		907593B32F49B4820026485D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		907593B92F49B4820026485D /* SocialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		907593C32F49B4820026485D /* SocialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -76,6 +83,8 @@
 			isa = PBXGroup;
 			children = (
 				907593AE2F49B4810026485D /* Social */,
+				907593B32F49B4820026485D /* Assets.xcassets */,
+				907593AF2F49B4810026485D /* SocialApp.swift */,
 				907593BC2F49B4820026485D /* SocialTests */,
 				907593C62F49B4820026485D /* SocialUITests */,
 				907593AD2F49B4810026485D /* Products */,
@@ -212,6 +221,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				907593B42F49B4820026485D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				907593B02F49B4810026485D /* SocialApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
