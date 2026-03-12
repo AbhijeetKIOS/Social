@@ -12,7 +12,7 @@ struct PostGridView: View {
     var body: some View {
         GeometryReader { proxy in
             LazyVGrid(columns: items) {
-                ForEach(0..<10) { index in
+                ForEach(0..<20) { index in
                     Image("abhi")
                         .resizable()
                         .scaledToFill()

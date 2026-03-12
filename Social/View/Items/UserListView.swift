@@ -11,7 +11,7 @@ struct UserListView: View {
     var body: some View {
         ScrollView {
             LazyVStack(){
-                ForEach(1..<10) { index in
+                ForEach(1..<120) { index in
                     UserCell()
                         .padding(.leading)
                 }
