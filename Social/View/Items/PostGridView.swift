@@ -13,11 +13,14 @@ struct PostGridView: View {
         GeometryReader { proxy in
             LazyVGrid(columns: items) {
                 ForEach(0..<20) { index in
-                    Image("abhi")
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: proxy.size.width / 3, height: proxy.size.width / 3)
-                        .clipped()
+                    NavigationLink(destination: FeedView()) {
+                        Image("abhi")
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: proxy.size.width / 3, height: proxy.size.width / 3)
+                            .clipped()
+                    }
+                   
                 }
             }
         }

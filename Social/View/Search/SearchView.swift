@@ -14,11 +14,12 @@ struct SearchView: View {
         ScrollView {
             SearchBar(text: $searchText, isEditing: $inSearchMode)
                 .padding()
-            if inSearchMode {
-                UserListView()
-            }else{
-                PostGridView()
-                
+            ZStack{
+                if inSearchMode || !searchText.isEmpty {
+                    UserListView()
+                }else{
+                    PostGridView()
+                }
             }
             
         }

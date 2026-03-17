@@ -12,8 +12,11 @@ struct UserListView: View {
         ScrollView {
             LazyVStack(){
                 ForEach(1..<120) { index in
-                    UserCell()
-                        .padding(.leading)
+                    NavigationLink(destination: ProfileView()) {
+                        UserCell()
+                            .padding(.leading)
+                    }
+                   
                 }
             }
         }
