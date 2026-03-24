@@ -23,7 +23,10 @@ struct SearchView: View {
             }
             
         }
-        .animation(.easeInOut, value: inSearchMode)
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbarBackground(Color.white, for: .navigationBar)
+        .toolbarBackground(.visible, for: .navigationBar)
+        .toolbarColorScheme(.light, for: .navigationBar)
     }
 }
 
