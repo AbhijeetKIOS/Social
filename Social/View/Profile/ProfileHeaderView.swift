@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ProfileHeaderView: View {
+    // updated code , who missed on ProfileHeaderView branch
     var body: some View {
         VStack(alignment: .leading){
             HStack{
