@@ -45,6 +45,7 @@ struct ProfileActionBitton: View {
                         .font(.system(size: 14,weight: .semibold))
                         .frame(width: 172, height: 32)
                         .foregroundStyle(.black)
+                        .background(Color.white)
                         .overlay {
                             RoundedRectangle(cornerRadius: 3)
                                 .stroke(Color.gray, lineWidth: 1)
