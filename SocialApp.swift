@@ -11,7 +11,8 @@ import SwiftUI
 struct SocialApp: App {
     var body: some Scene {
         WindowGroup {
-            MainTabView()
+            // MainTabView()
+            RootView()
         }
     }
 }
