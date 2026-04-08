@@ -74,9 +74,11 @@ struct LoginView: View {
                             .padding()
                     }
                     Spacer()
-                    Button {
-                        
-                    } label: {
+                    
+                    NavigationLink {
+                        RegisterView()
+                    }
+                    label: {
                         HStack{
                             Text("Don't have an account?")
                                 .font(.system(size: 14))
@@ -87,6 +89,7 @@ struct LoginView: View {
                     }.foregroundStyle(.white)
                     
                 }
+                
             }
         }
         
