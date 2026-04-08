@@ -10,6 +10,7 @@ import SwiftUI
 struct RootView: View {
     
     @State private var isLoading = true
+    @EnvironmentObject var viewModel: AuthViewModel
     
     var body: some View {
         
@@ -21,7 +22,13 @@ struct RootView: View {
                     }
                 }
         } else {
-            MainTabView()
+            Group{
+                if viewModel.userSession == nil{
+                    LoginView()
+                }else{
+                    MainTabView()
+                }
+            }
         }
     }
 }
