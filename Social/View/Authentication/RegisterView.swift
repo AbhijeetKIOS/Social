@@ -16,6 +16,7 @@ struct RegisterView: View {
     @State var imagePickerIsPresented: Bool = false
     @State private var image: Image?
     @Environment(\.dismiss) var dismiss
+    @EnvironmentObject var viewModel: AuthViewModel
     
     var body: some View {
         NavigationStack{
@@ -104,7 +105,8 @@ struct RegisterView: View {
                         .padding(.horizontal, 32)
                         
                         Button {
-                            dismiss()
+                            viewModel
+                                .register(withEmail: email, password: password)
                         } label: {
                             Text("Sign Up")
                                 .font(.headline)
