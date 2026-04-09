@@ -11,6 +11,7 @@ import FirebaseAuth
 import Combine
 class AuthViewModel: ObservableObject{
     @Published var userSession: FirebaseAuth.User?
+    static var shared = AuthViewModel()
     
     init() {
         userSession = Auth.auth().currentUser
@@ -35,7 +36,8 @@ class AuthViewModel: ObservableObject{
     }
     
     func signOut(){
-        
+        self.userSession = nil
+        try? Auth.auth().signOut()
     }
     
     func resetPassword(){
