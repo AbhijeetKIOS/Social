@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct MainTabView: View {
+    @State private var showLogoutAleart = false
     var body: some View {
         
         TabView {
@@ -52,12 +53,29 @@ struct MainTabView: View {
                 ProfileView()
                     .navigationTitle("Profile")
                     .navigationBarTitleDisplayMode(.inline)
+                    .toolbar {
+                        ToolbarItem(
+                            placement: .navigationBarTrailing) {
+                                logoutButton
+                            }
+                    }
+                
+                
             }
             .tabItem {
                 Label("Profile", systemImage: "person")
             }
         }
         .tint(.black)
+    }
+    var logoutButton: some View {
+        Button {
+            AuthViewModel.shared.signOut()
+        } label: {
+            Text("Logout")
+                .foregroundStyle(.black)
+        }
+        
     }
 }
 
