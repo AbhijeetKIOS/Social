@@ -17,6 +17,8 @@ struct RegisterView: View {
     @State private var image: Image?
     @Environment(\.dismiss) var dismiss
     @EnvironmentObject var viewModel: AuthViewModel
+    @State private var profileImageUrl: String?
+    @State private var isUploading = false
     
     var body: some View {
         NavigationStack{
@@ -106,7 +108,13 @@ struct RegisterView: View {
                         
                         Button {
                             viewModel
-                                .register(withEmail: email, password: password)
+                                .register(
+                                    withEmail: email,
+                                    password: password,
+                                    username: userName,
+                                    fullname: fullName,
+                                    image: selectedImage
+                                )
                         } label: {
                             Text("Sign Up")
                                 .font(.headline)
