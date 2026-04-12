@@ -17,13 +17,12 @@
 		9099B0072F86661D000D806D /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 9099B0062F86661D000D806D /* FirebaseFirestore */; };
 		9099B0092F86661D000D806D /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 9099B0082F86661D000D806D /* FirebaseFirestoreCombine-Community */; };
 		9099B00B2F86661D000D806D /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 9099B00A2F86661D000D806D /* FirebaseStorage */; };
-		9099B16C2F87974A000D806D /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = 9099B16B2F87974A000D806D /* Auth */; };
-		9099B16E2F87974A000D806D /* Functions in Frameworks */ = {isa = PBXBuildFile; productRef = 9099B16D2F87974A000D806D /* Functions */; };
-		9099B1702F87974A000D806D /* PostgREST in Frameworks */ = {isa = PBXBuildFile; productRef = 9099B16F2F87974A000D806D /* PostgREST */; };
-		9099B1722F87974A000D806D /* Realtime in Frameworks */ = {isa = PBXBuildFile; productRef = 9099B1712F87974A000D806D /* Realtime */; };
-		9099B1742F87974A000D806D /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = 9099B1732F87974A000D806D /* Storage */; };
-		9099B1762F87974A000D806D /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 9099B1752F87974A000D806D /* Supabase */; };
-		9099B17B2F88CE45000D806D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 9099B17A2F88CE45000D806D /* Kingfisher */; };
+		9099B1D52F8A36B4000D806D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 9099B1D42F8A36B4000D806D /* Kingfisher */; };
+		9099B1D82F8A370D000D806D /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = 9099B1D72F8A370D000D806D /* Auth */; };
+		9099B1DA2F8A370D000D806D /* Functions in Frameworks */ = {isa = PBXBuildFile; productRef = 9099B1D92F8A370D000D806D /* Functions */; };
+		9099B1DC2F8A370D000D806D /* Realtime in Frameworks */ = {isa = PBXBuildFile; productRef = 9099B1DB2F8A370D000D806D /* Realtime */; };
+		9099B1DE2F8A370D000D806D /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = 9099B1DD2F8A370D000D806D /* Storage */; };
+		9099B1E02F8A370D000D806D /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 9099B1DF2F8A370D000D806D /* Supabase */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,20 +74,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9099B1742F87974A000D806D /* Storage in Frameworks */,
+				9099B1DE2F8A370D000D806D /* Storage in Frameworks */,
+				9099B1DA2F8A370D000D806D /* Functions in Frameworks */,
 				9099AFFF2F86661D000D806D /* FirebaseAnalytics in Frameworks */,
-				9099B17B2F88CE45000D806D /* Kingfisher in Frameworks */,
 				9099B0032F86661D000D806D /* FirebaseAuth in Frameworks */,
+				9099B1D82F8A370D000D806D /* Auth in Frameworks */,
 				9099B0052F86661D000D806D /* FirebaseDatabase in Frameworks */,
-				9099B16E2F87974A000D806D /* Functions in Frameworks */,
-				9099B1702F87974A000D806D /* PostgREST in Frameworks */,
 				9099B0092F86661D000D806D /* FirebaseFirestoreCombine-Community in Frameworks */,
+				9099B1D52F8A36B4000D806D /* Kingfisher in Frameworks */,
 				9099B00B2F86661D000D806D /* FirebaseStorage in Frameworks */,
 				9099B0072F86661D000D806D /* FirebaseFirestore in Frameworks */,
-				9099B16C2F87974A000D806D /* Auth in Frameworks */,
 				9099B0012F86661D000D806D /* FirebaseAnalyticsCore in Frameworks */,
-				9099B1722F87974A000D806D /* Realtime in Frameworks */,
-				9099B1762F87974A000D806D /* Supabase in Frameworks */,
+				9099B1DC2F8A370D000D806D /* Realtime in Frameworks */,
+				9099B1E02F8A370D000D806D /* Supabase in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,13 +157,12 @@
 				9099B0062F86661D000D806D /* FirebaseFirestore */,
 				9099B0082F86661D000D806D /* FirebaseFirestoreCombine-Community */,
 				9099B00A2F86661D000D806D /* FirebaseStorage */,
-				9099B16B2F87974A000D806D /* Auth */,
-				9099B16D2F87974A000D806D /* Functions */,
-				9099B16F2F87974A000D806D /* PostgREST */,
-				9099B1712F87974A000D806D /* Realtime */,
-				9099B1732F87974A000D806D /* Storage */,
-				9099B1752F87974A000D806D /* Supabase */,
-				9099B17A2F88CE45000D806D /* Kingfisher */,
+				9099B1D42F8A36B4000D806D /* Kingfisher */,
+				9099B1D72F8A370D000D806D /* Auth */,
+				9099B1D92F8A370D000D806D /* Functions */,
+				9099B1DB2F8A370D000D806D /* Realtime */,
+				9099B1DD2F8A370D000D806D /* Storage */,
+				9099B1DF2F8A370D000D806D /* Supabase */,
 			);
 			productName = Social;
 			productReference = 907593AC2F49B4810026485D /* Social.app */;
@@ -251,8 +248,8 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				9099AFFD2F86661D000D806D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-				9099B16A2F87974A000D806D /* XCRemoteSwiftPackageReference "supabase-swift" */,
-				9099B1792F88CE45000D806D /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				9099B1D32F8A36B4000D806D /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				9099B1D62F8A370D000D806D /* XCRemoteSwiftPackageReference "supabase-swift" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 907593AD2F49B4810026485D /* Products */;
@@ -650,20 +647,20 @@
 				minimumVersion = 12.12.0;
 			};
 		};
-		9099B16A2F87974A000D806D /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/supabase/supabase-swift";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.5.1;
-			};
-		};
-		9099B1792F88CE45000D806D /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+		9099B1D32F8A36B4000D806D /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 8.8.1;
+			};
+		};
+		9099B1D62F8A370D000D806D /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -704,40 +701,35 @@
 			package = 9099AFFD2F86661D000D806D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
 		};
-		9099B16B2F87974A000D806D /* Auth */ = {
+		9099B1D42F8A36B4000D806D /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9099B16A2F87974A000D806D /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			package = 9099B1D32F8A36B4000D806D /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		9099B1D72F8A370D000D806D /* Auth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9099B1D62F8A370D000D806D /* XCRemoteSwiftPackageReference "supabase-swift" */;
 			productName = Auth;
 		};
-		9099B16D2F87974A000D806D /* Functions */ = {
+		9099B1D92F8A370D000D806D /* Functions */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9099B16A2F87974A000D806D /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			package = 9099B1D62F8A370D000D806D /* XCRemoteSwiftPackageReference "supabase-swift" */;
 			productName = Functions;
 		};
-		9099B16F2F87974A000D806D /* PostgREST */ = {
+		9099B1DB2F8A370D000D806D /* Realtime */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9099B16A2F87974A000D806D /* XCRemoteSwiftPackageReference "supabase-swift" */;
-			productName = PostgREST;
-		};
-		9099B1712F87974A000D806D /* Realtime */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 9099B16A2F87974A000D806D /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			package = 9099B1D62F8A370D000D806D /* XCRemoteSwiftPackageReference "supabase-swift" */;
 			productName = Realtime;
 		};
-		9099B1732F87974A000D806D /* Storage */ = {
+		9099B1DD2F8A370D000D806D /* Storage */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9099B16A2F87974A000D806D /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			package = 9099B1D62F8A370D000D806D /* XCRemoteSwiftPackageReference "supabase-swift" */;
 			productName = Storage;
 		};
-		9099B1752F87974A000D806D /* Supabase */ = {
+		9099B1DF2F8A370D000D806D /* Supabase */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9099B16A2F87974A000D806D /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			package = 9099B1D62F8A370D000D806D /* XCRemoteSwiftPackageReference "supabase-swift" */;
 			productName = Supabase;
-		};
-		9099B17A2F88CE45000D806D /* Kingfisher */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 9099B1792F88CE45000D806D /* XCRemoteSwiftPackageReference "Kingfisher" */;
-			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
