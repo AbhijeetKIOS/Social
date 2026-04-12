@@ -19,8 +19,17 @@ class AuthViewModel: ObservableObject{
     init() {
         userSession = Auth.auth().currentUser
     }
-    func login(){
-        print("login")
+    func login(withEmail email: String,
+               password: String){
+        Auth.auth().signIn(withEmail: email, password: password){result,error in
+            if let error = error{
+                print("Debug: Login failed\(error.localizedDescription)")
+                return
+            }
+            guard let user = result?.user else { return }
+            self.userSession = user
+            print("Lgin successfully")
+        }
     }
     func register(
         withEmail email: String,
@@ -68,6 +77,7 @@ class AuthViewModel: ObservableObject{
                             .setData(userData)
                         print("✅ User saved in Firestore")
                         print("Successfully registered user.....")
+                        self.userSession = user
                         
                     } catch{
                         print("❌ Upload error:", error.localizedDescription)
